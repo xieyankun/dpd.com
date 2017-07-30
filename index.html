@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="js/plugin/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery/jquery-2.0.3.js"></script>
     <script src="js/plugin/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="home">
@@ -15,8 +17,8 @@
         <header class="clf">
             <a href="#" class="logo"></a>
             <ul class="menu clf">
-                <li class="m-active">
-                    <a href="index.html">HOME<br>
+                <li>
+                    <a class="m-active" href="index.html">HOME<br>
                         <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
                 </li>
@@ -26,19 +28,21 @@
                 </li>
                 <li><a href="about.html">ABOUT DPD</a></li>
             </ul>
+            
+            <div class="m-menu">
+                <span class="glyphicon glyphicon-th-list"></span>
+            </div>
+
         </header>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">
+                    <img src="http://7xrnaw.com1.z0.glb.clouddn.com/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://7xrnaw.com1.z0.glb.clouddn.com/banner2.png" alt="">
+                </div>
                 <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                <div class="swiper-slide">Slide 10</div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>

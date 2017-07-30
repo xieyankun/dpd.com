@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery/jquery-2.0.3.js"></script>
     <script src="js/plugin/swiper/dist/js/swiper.jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div class="contact">
@@ -20,24 +21,29 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="divisions.html">DIViSIONS</a></li>
                 <li><a href="brands.html">BRSNDS</a></li>
-                <li class="m-active">
-                    <a href="contact.html">CONTACT<br>
+                <li>
+                    <a class="m-active" href="contact.html">CONTACT<br>
                         <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                     </a>
                 </li>
                 <li><a href="about.html">ABOUT DPD</a></li>
             </ul>
+            <div class="m-menu">
+                <span class="glyphicon glyphicon-th-list"></span>
+            </div>
         </header>
-        <h1>contact us</h1>
-        <div class="hotline">
-            <h3>Servies hotline</h3>
-            <p>+86 750 8306085</p>
+        <div class="c-content">
+            <h1>contact us</h1>
+            <div class="hotline">
+                <h3>Servies hotline</h3>
+                <p>+86 750 8306085</p>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <p>Block D no.326 Xianghe road, Qinghuatongfang Industrial Park, Gonghe Town, Heshan, Guangdong, China</p>
+            </div>
+            <iframe width='940' height='400' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/wgAG_0F43aw8'></iframe>'
         </div>
-        <div class="address">
-            <h3>Address</h3>
-            <p>Block D no.326 Xianghe road, Qinghuatongfang Industrial Park, Gonghe Town, Heshan, Guangdong, China</p>
-        </div>
-        <iframe width='560' height='440' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/2th2o_07139Aa'></iframe>'
     </div>
     <footer>
         <div class="container">
@@ -71,6 +77,20 @@
             </div>
         </div>
     </footer>
+
+<script type="text/javascript">
+    function getIframeDOM(id){
+        return document.getElementById(id).contentDocument || document.frames[id].document;
+    }
+
+    function setHeight(){
+        var bodyfont = getIframeDOM("iframeZW");
+        bodyfont.body.style.width = 100 + "5";
+    }
+    setHeight()
+
+</script>
+
 </div>
 </body>
 </html>
