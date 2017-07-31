@@ -1,8 +1,7 @@
-html, body {
-    position: relative;
-    height: 100%;
-}
+html{height:100%;}
 body {
+    min-height:100%;
+    position: relative;
     background: #FFF;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -10,6 +9,13 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.main{padding-bottom:100px;}
+footer{
+    position:absolute;
+    bottom:0;
+}
+
 ul{
     padding-left: 0;
     padding-left: 0;
@@ -51,6 +57,7 @@ ol, ul{
 .contact iframe{
     width: 100% !important;
     height: 300px;
+    margin-bottom: 120px;
 }
 .contact iframe body{
     width: 100% !important;
@@ -185,7 +192,7 @@ footer{
     width: 100%;
     border-bottom: 2px solid #65acd4;
     padding-bottom: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 120px;
     margin-top: 24px;
 }
 .about-img img{
