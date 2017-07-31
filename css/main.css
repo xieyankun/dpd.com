@@ -26,6 +26,9 @@ ol, ul{
     margin-left: auto;
     margin-right: auto;
 }
+.swiper-container img{
+    width: 100%;
+}
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -170,11 +173,12 @@ footer{
 .img-wrap{
     width: 100%;
     height: 480px;
+    line-height: 480px;
     text-align: center;
 }
 .img-wrap img{
-    width: 100%;
-    height: 480px;
+    // width: 100%;
+    // height: 480px;
 }
 
 .about-img{
